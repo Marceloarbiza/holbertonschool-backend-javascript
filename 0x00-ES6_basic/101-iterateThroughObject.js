@@ -1,3 +1,4 @@
+/* eslint eqeqeq: 0 */
 export default function iterateThroughObject(reportWithIterator) {
   let str = '';
   for (const idx in reportWithIterator) {
