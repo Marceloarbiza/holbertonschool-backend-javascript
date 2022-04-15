@@ -1,3 +1,5 @@
+/* eslint no-underscore-dangle: 0 */
+/* eslint max-classes-per-file: ["error", 2] */
 export class HolbertonClass {
   constructor(year, location) {
     this._year = year;
@@ -23,6 +25,7 @@ export class StudentHolberton {
   get fullName() {
     return this._firstName;
   }
+
   get lastName() {
     return this._lastName;
   }
@@ -36,8 +39,8 @@ export class StudentHolberton {
   }
 }
 
-//const class2019 = new HolbertonClass(2019, 'San Francisco');
-//const class2020 = new HolbertonClass(2020, 'San Francisco');
+// const class2019 = new HolbertonClass(2019, 'San Francisco');
+// const class2020 = new HolbertonClass(2020, 'San Francisco');
 
 const student1 = new StudentHolberton('Guillaume', 'Salva', new HolbertonClass(2020, 'San Francisco'));
 const student2 = new StudentHolberton('John', 'Doe', new HolbertonClass(2020, 'San Francisco'));
