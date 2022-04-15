@@ -21,11 +21,14 @@ export class StudentHolberton {
   }
 
   get fullName() {
-    return `${this._firstName} ${this._lastName}`;
+    return this._firstName;
+  }
+  get lastName() {
+    return this._lastName;
   }
 
   get holbertonClass() {
-    return this.holbertonClass;
+    return this._holbertonClass;
   }
 
   get fullStudentDescription() {
@@ -42,4 +45,6 @@ const student3 = new StudentHolberton('Albert', 'Clinton', new HolbertonClass(20
 const student4 = new StudentHolberton('Donald', 'Bush', new HolbertonClass(2019, 'San Francisco'));
 const student5 = new StudentHolberton('Jason', 'Sandler', new HolbertonClass(2019, 'San Francisco'));
 
-export const listOfStudents = [student1, student2, student3, student4, student5];
+const listOfStudents = [student1, student2, student3, student4, student5];
+
+export default listOfStudents;
