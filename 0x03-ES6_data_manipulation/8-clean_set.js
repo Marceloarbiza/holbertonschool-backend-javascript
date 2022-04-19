@@ -1,10 +1,11 @@
 export default function cleanSet(set, startString) {
-  for (let item of set) {
-    if (!item.startsWith(startString)) {
-      set.delete(item);
+  for (const item of set) {
+    if (item.startsWith(startString)) {
+      item.slice(0, startString.length - 1);
     } else {
-      item.replace(startString, 'asda');
+      set.delete(item);
     }
   }
   return [...set].join('-');
+
 }
