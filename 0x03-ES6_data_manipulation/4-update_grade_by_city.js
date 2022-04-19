@@ -3,8 +3,7 @@ export default function updateStudentGradeByCity(arrStudents, strCity, arrNewGra
     const found = arrNewGrades.find((obj) => obj.studentId === z.id);
     if (found) {
       return { ...z, grade: found.grade };
-    } else {
-      return { ...z, grade: 'N/A' };
     }
+    return { ...z, grade: 'N/A' };
   });
 }
