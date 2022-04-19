@@ -1,10 +1,7 @@
 export default function cleanSet(set, startString) {
   const arr = [];
-  if (startString === '') {
-    return arr.join('-');
-  }
   for (const item of set) {
-    if (item.startsWith(startString)) {
+    if (item.startsWith(startString) && startString.length > 0) {
       arr.push(item.replace(startString, ''));
     }
   }
